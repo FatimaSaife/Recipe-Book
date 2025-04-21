@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="recipe-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciepe Book</title> 
+    
+</head>
+<body>
+     <!--Start menue-->
+     <section class="navbar">
+        <a href="index.html"><img src="images/logo.webp" alt="logo" id="logo"></a>
+        <a href="index.html">Home</a>
+        <a href="add-recipe.html">Add Reciepe</a>
+        <a href="recipe-list.html">Reciepe List</a>
+        <a href="recipe-details.html">Reciepe Details</a>
+    </section>
+    <!--End Menue-->
+    <div class="recipe-form-container">
+        <h2>Add Your Recipe</h2>
+        <form id="recipeForm">
+            <label for="recipeName">Recipe Name</label>
+            <input type="text" id="recipeName" name="recipeName" required>
+
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+            <option value="">-- Select Category --</option>
+            <option value="Desserts">Desserts</option>
+            <option value="Appetizers">Appetizers</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Quick Meals">Quick Meals</option>
+            </select>
+
+            <label for="ingredients">Ingredients</label>
+            <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+            <label for="instructions">Cooking Instructions</label>
+            <textarea id="instructions" name="instructions" rows="6" required></textarea>
+
+            <label for="imageUrl">Insert Image</label>
+            <input type="file" id="imageUrl" name="imageUrl" required>
+
+            <button type="submit">Add Recipe</button>
+        </form>
+    </div>
+
+</body>
+</html>

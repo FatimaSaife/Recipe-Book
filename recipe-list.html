@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" href="recipe-style.css">
+  <title>All Recipes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff9f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f46928;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: white;
+    }
+
+    .recipes-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .recipe-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .recipe-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .recipe-info h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+
+    .recipe-info h3 a {
+      text-decoration: none;
+      color: #f46928;
+      transition: color 0.3s;
+    }
+
+    .recipe-info h3 a:hover {
+      color: #d6561f;
+    }
+
+    .recipe-info p {
+      font-size: 14px;
+      color: #777;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!--Start menue-->
+  <section class="navbar">
+    <a href="index.html"><img src="images/logo.webp" alt="logo" id="logo"></a>
+    <a href="index.html">Home</a>
+    <a href="add-recipe.html">Add Reciepe</a>
+    <a href="recipe-list.html">Reciepe List</a>
+    <a href="recipe-details.html">Reciepe Details</a>
+</section>
+<!--End Menue-->
+  <div class="recipes-container">
+    <div class="recipe-card">
+      <img src="images/kabuli-palaw.jpeg" alt="Kabuli Palaw">
+      <div class="recipe-info">
+        <h3><a href="recipe-details.html">Kabuli Palaw</a></h3>
+        <p>Category: Main Dish</p>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <img src="images/afghan-dessert.jpg" alt="Afghan Dessert">
+      <div class="recipe-info">
+        <h3><a href="recipe-details.html">Sheer Khurma</a></h3>
+        <p>Category: Desserts</p>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <img src="images/vegan-afghan.webp" alt="Vegan Afghan Dish">
+      <div class="recipe-info">
+        <h3><a href="recipe-details.html">Borani Banjan</a></h3>
+        <p>Category: Vegan</p>
+      </div>
+    </div>
+    <!-- More recipe cards can be added here -->
+  </div>
+  <div class="recipes-container">
+    <div class="recipe-card">
+      <img src="images/kabuli-palaw.jpeg" alt="Kabuli Palaw">
+      <div class="recipe-info">
+        <h3><a href="recipe-details.html">Kabuli Palaw</a></h3>
+        <p>Category: Main Dish</p>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <img src="images/afghan-dessert.jpg" alt="Afghan Dessert">
+      <div class="recipe-info">
+        <h3><a href="recipe-details.html">Sheer Khurma</a></h3>
+        <p>Category: Desserts</p>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <img src="images/vegan-afghan.webp" alt="Vegan Afghan Dish">
+      <div class="recipe-info">
+        <h3><a href="recipe-details.html">Borani Banjan</a></h3>
+        <p>Category: Vegan</p>
+      </div>
+    </div>
+    <!-- More recipe cards can be added here -->
+  </div>
+
+</body>
+</html>

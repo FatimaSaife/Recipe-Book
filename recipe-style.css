@@ -1,0 +1,307 @@
+/* start navbar style */
+body
+{
+  padding: 1%;
+}       
+.navbar {
+        overflow: hidden;
+        background-color: #f46928;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-left: 2%;
+        vertical-align: middle;        
+        transition: all 0.3s ease;
+        border-radius: 5px;
+       
+        }
+
+        .navbar a:hover {
+            background-color: #fff;  
+        }
+
+        #logo
+        {
+          width:30px;
+          float: left;
+          display: flex;
+        }    
+
+        .navbar {
+            display: flex;
+       /*     justify-content: center;*/
+            gap: 40px;
+            background-color: #f46928;
+            padding: 15px 0;
+            font-family: Arial, sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+          }
+          
+          /* .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+           
+          } */
+          
+          .navbar a:hover {
+            background-color: white;
+            color: #f46928;
+            transform: scale(1.05);
+          }
+    /* end of navbar style */
+
+    /*style for welcom section*/
+        .welcome p {
+        float: left;
+        width: 48%;
+        /* padding: 1%; */
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 50px;
+        line-height: 1.8; 
+        }
+
+        .welcome img {
+        float: right;
+        width: 48%;
+        /* padding: 1%; */
+        border-radius: 30px;
+        }
+
+        .welcome::after {
+        content: "";
+        display: block;
+        clear: both;
+        }
+        h1 {
+        font-size: 50px;
+        color: #f46928;
+        margin-top: 40px;
+        text-align: center;
+        }
+
+    /* End welcome */
+
+    /* start recipe day */
+    .recipes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    
+    }
+    .recipes-container a
+    {
+        text-decoration: none;
+        color:#333;
+    }
+
+    .recipe-card {
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    /* border-radius: 12px; */
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    background-color: #fff;
+    transition: transform 0.2s;
+    }
+
+    .recipe-card:hover {
+    transform: scale(1.03);
+    }
+
+    .recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    }
+
+    .recipe-card .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+    }
+    .recipe-card p
+    {
+        text-align: left;
+    }
+/* End of Recipe of foods */
+
+/* start of featured categories style*/
+    .food-categories {
+        text-align: center;
+        padding: 40px 20px;
+        
+      }
+      
+      .category-circle-list {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      
+      .category-item a {
+        text-decoration: none;
+        color: #333;
+      }
+      
+      .category-item img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        padding: 10px;
+        object-fit: cover;
+        border: 0.5px solid  #747574; 
+        transition: all 0.3s ease;
+      }
+      
+      .category-item p {
+        margin-top: 10px;
+        font-size: 18px;
+        transition: all 0.3s ease;
+      }
+      
+      .category-item:hover img {
+        transform: scale(1.1);
+        border: 4px solid #f46928;
+      }
+      
+      .category-item:hover p {
+        color: #f46928;
+        transform: scale(1.1);
+      }
+      /* End of featured categories style*/
+
+      .subscription-form {
+        background-color: #fff3eb;
+        border: 2px solid #f46928;
+        padding: 30px;
+        border-radius: 12px;
+        max-width: 500px;
+        margin: 50px auto;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      }
+      
+      .subscription-form h2 {
+        color: #f46928;
+        margin-bottom: 10px;
+      }
+      
+      .subscription-form p {
+        color: #555;
+        margin-bottom: 20px;
+      }
+      
+      .subscription-form input[type="email"] {
+        padding: 12px 15px;
+        width: 70%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-right: 10px;
+        outline: none;
+      }
+      
+      .subscription-form button {
+        background-color: #f46928;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 5px;
+      }
+      
+      .subscription-form button:hover {
+        background-color: #d6561f;
+      }
+      
+      /*style for subscribe section*/
+      
+      .footer 
+      {
+        background-color: #747574;
+        padding: 50px;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+      }
+
+      /* Start style for add recipe page */
+      .recipe-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff3eb;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 2px solid #f46928;
+    font-family: Arial, sans-serif;
+    }
+
+    .recipe-form-container h2 {
+    text-align: center;
+    color: #f46928;
+    margin-bottom: 20px;
+    }
+
+    .recipe-form-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    }
+
+    .recipe-form-container input,
+    .recipe-form-container select,
+    .recipe-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    }
+
+    .recipe-form-container textarea {
+    resize: vertical;
+    }
+
+    .recipe-form-container button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #f46928;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    .recipe-form-container button:hover {
+    background-color: #d6561f;
+    }
+
+        /*End style for add recipe page */
